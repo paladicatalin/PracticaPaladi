@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Appliances</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Kablammo&family=Maitree:wght@200;300;400;500;600;700&family=Montaga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="LargeAppliances.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="search-icon-mobile">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="logo-container">
+                <div class="logo-img">
+                    <a href="index.html"><img src="logo-site.jpg" alt="Logo" /></a>
+                </div>
+                <a href="index.html"><div class="logo-text"><span class="e-color">E</span>House</div></a>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="search..." />
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="icons-container">
+                <a href="#" class="icon-link cart-link" title="Bag">
+                    <img src="shopping-bag.svg" alt="Bag" class="icon-img">
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="favorite.html" class="icon-link" title="Favorites">
+                      <img src="Vector-red.svg" alt="Favorites" class="icon-img">
+                </a>
+                <div class="profile-dropdown">
+                    <div class="profile-icon" title="Profile">
+                        <img src="user.svg" alt="Profile" class="icon-img">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="login.html"><img src="log-in.svg" class="dropdown-icon"> Log In</a>
+                        <a href="#" class="my-bag-link"><img src="shopping-bag.svg" class="dropdown-icon"> My Bag</a>
+                        <a href="favorite.html"><img src="Vector.svg" class="dropdown-icon"> Favorites</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list" id="navList">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active">Large Appliances</a></li>
+                <li class="nav-item"><a href="404.html" class="nav-link">Small Appliances</a></li>
+                <li class="nav-item"><a href="404.html" class="nav-link sale">Sale</a></li>
+                <li class="nav-item"><a href="Warranty.html" class="nav-link">Warranty&Return</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider-container">
+        <div class="slider-images">
+            <div class="slider-image">
+                <img src="large_appliances.svg" alt="LargeAppliances" />
+                <div class="slider-overlay"></div>
+                <div class="slider-content">
+                    <div class="slider-text">
+                        <p class="first">The Best Technologies For Your Kitchen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="deals-header">
+        <h2>Large Appliances</h2>
+    </div>
+    <section class="deals-section">
+        <div class="deals-container">
+
+            <div class="filter-section">
+                <div class="filter-title "  id="filterToggleIcon">Filters <i class="fas fa-sliders-h"></i></div>
+                <div class="filter-group">
+                    <div class="filter-group-title">Sort by Name</div>
+                    <div class="filter-option">
+                        <input type="radio" id="nameAscending" name="sort_order" value="nameAsc">
+                        <label for="nameAscending">A-Z (Ascending)</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" id="nameDescending" name="sort_order" value="nameDesc">
+                        <label for="nameDescending">Z-A (Descending)</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group-title">Sort by Price</div>
+                    <div class="filter-option">
+                        <input type="radio" id="priceAscending" name="sort_order" value="priceAsc">
+                        <label for="priceAscending">Lowest first</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" id="priceDescending" name="sort_order" value="priceDesc">
+                        <label for="priceDescending">Highest first</label>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group-title">Price Range</div>
+                    <div class="price-range">
+                        <div class="price-slider-container">
+                            <input type="range" class="price-slider" id="priceSliderMin" min="0" max="500" value="100">
+                            <input type="range" class="price-slider" id="priceSliderMax" min="0" max="500" value="420">
+                        </div>
+                        <div class="price-values">
+                            <span id="minPriceValue">100 EUR</span>
+                            <span id="maxPriceValue">420 EUR</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <div class="filter-group-title">Sale</div>
+                    <div class="filter-option">
+                        <input type="radio" id="allProducts" name="sale_filter" value="all" checked>
+                        <label for="allProducts">All products</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" id="onSale" name="sale_filter" value="yes">
+                        <label for="onSale">On sale</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="radio" id="notOnSale" name="sale_filter" value="no">
+                        <label for="notOnSale">Not on sale</label>
+                    </div>
+                </div>
+                <button id="clearFilters"                                                                                                                               style="background-color: var(--color-light-blue); color: white; border: none; border-radius: 4px; padding: 8px 12px; margin-top: 15px; cursor: pointer; width: 100%; font-family: var(--font-secondary);">Clear all filters</button>
+            </div>
+            <div class="deals-grid">
+<!--Produs 1-->
+                        <div class="product-card" data-product-id="2" data-product-name="ARCTIC APLM1WFSU1210W washing machine" data-product-price="220" data-old-price="280" data-product-image="img2.png">
+                    <div class="wishlist-icon" data-product-id="2">
+                        <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                    </div>
+                    <div class="product-image">
+                        <img src="img2.png" alt="ARCTIC washing machine">
+                    </div>
+                    <div class="product-title">ARCTIC APLM1WFSU1210W washing machine, 8 kg, 1200rpm, Class A, white</div>
+                    <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="rating-count">4,60(15)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price-ws">220 EUR</span>
+                    </div>
+                    <button class="add-to-bag" data-product-id="2">Add to bag</button>
+                </div>
+<!--Produs 2-->
+                <div class="product-card" data-product-id="3" data-product-name="Televizor LED Smart HISENSE 50A6N" data-product-price="240" data-old-price="300" data-product-image="img3.png">
+                    <div class="wishlist-icon" data-product-id="3">
+                        <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                    </div>
+                    <div class="product-image">
+                        <img src="img3.png" alt="HISENSE Smart TV">
+                    </div>
+                    <div class="product-title">Televizor LED Smart HISENSE 50A6N, Ultra HD 4K, HDR, 126cm</div>
+                    <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="rating-count">4,76(74)</span>
+                    </div>
+                    <div class="product-price">
+                       <span class="current-price-ws">240 EUR</span>
+                    </div>
+                    <button class="add-to-bag" data-product-id="3">Add to bag</button>
+                </div>
+<!--Produs 3-->
+                <div class="product-card" data-product-id="1" data-product-name="Refrigerator GORENJE RK4182PW4" data-product-price="300" data-product-image="img1.png">
+                    <div class="wishlist-icon" data-product-id="1">
+                        <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                    </div>
+                    <div class="product-image">
+                        <img src="img1.png" alt="Refrigerator GORENJE">
+                    </div>
+                    <div class="product-title">Refrigerator GORENJE RK4182PW4, 269 l, H 180 cm, Class E, white</div>
+                    <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="rating-count">4,59(54)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="old-price">350 EUR</span>
+                        <span class="current-price">300 EUR</span>
+                    </div>
+                    <button class="add-to-bag" data-product-id="1">Add to bag</button>
+                </div>
+<!--Produs 4-->
+                 <div class="product-card" data-product-id="6" data-product-name="Air conditioner BEKO" data-product-price="200" data-product-image="imag6.png">
+                <div class="wishlist-icon" data-product-id="6">
+                    <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                </div>
+                <div class="product-image">
+                    <img src="imag6.png" >
+                </div>
+                <div class="product-title">
+                  Air conditioner BEKO , A++, Heating Function, Inverter, installation kit , white
+                </div>
+                <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="rating-count">4,61(365)</span>
+                </div>
+                <div class="product-price">
+                     <span class="old-price">250 EUR</span>
+                        <span class="current-price">220 EUR</span>
+                </div>
+                <button class="add-to-bag" data-product-id="6">Add to bag</button>
+            </div>
+<!--Produs 5-->
+              <div class="product-card" data-product-id="7" data-product-name="SHARP  front-loading washing machine" data-product-price="250" data-product-image="imag7.png">
+                <div class="wishlist-icon" data-product-id="7">
+                    <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                </div>
+                <div class="product-image">
+                    <img src="imag7.png" >
+                </div>
+                <div class="product-title">
+                  SHARP  front-loading washing machine, 6 kg, 1000rpm, Class C, white
+                </div>
+                <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="rating-count">4,01(55)</span>
+                </div>
+                <div class="product-price">
+                     <span class="current-price-ws">250 EUR</span>
+                </div>
+                <button class="add-to-bag" data-product-id="7">Add to bag</button>
+            </div>
+<!--Produs 6 -->
+            <div class="product-card" data-product-id="8" data-product-name="HISENSE tumble dryer" data-product-price="200" data-product-image="imag8.png">
+                <div class="wishlist-icon" data-product-id="8">
+                    <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                </div>
+                <div class="product-image">
+                    <img src="imag8.png" >
+                </div>
+                <div class="product-title">
+                 HISENSE tumble dryer, Heat pump, 10 kg, 17 programs, Class A+++, white
+                </div>
+                <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="rating-count">4,50(2)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price-ws">200 EUR</span>
+                </div>
+                <button class="add-to-bag" data-product-id="8">Add to bag</button>
+            </div>
+<!--Produs 7 -->  
+
+            <div class="product-card" data-product-id="5" data-product-name="GORENJE DHNE82 tumble dryer" data-product-price="270" data-product-image="imag5.png">
+                <div class="wishlist-icon" data-product-id="5">
+                    <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                </div>
+                <div class="product-image">
+                    <img src="imag5.png" >
+                </div>
+                <div class="product-title">GORENJE DHNE82 tumble dryer, Heat pump, 8 kg, 15 programs, Class A++, white</div>
+                <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="rating-count">4,86(14)</span>
+                </div>
+                <div class="product-price">
+                    <span class="old-price">350 EUR</span>
+                    <span class="current-price">270 EUR</span>
+                </div>
+                <button class="add-to-bag" data-product-id="5">Add to bag</button>
+            </div>
+
+<!--Produs 8-->
+
+             <div class="product-card" data-product-id="9" data-product-name="Front-loading washing machine VORTEX" data-product-price="370" data-product-image="imag9.png">
+                <div class="wishlist-icon" data-product-id="9">
+                    <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                </div>
+                <div class="product-image">
+                    <img src="imag9.png" >
+                </div>
+                <div class="product-title">
+                 Front-loading washing machine VORTEX, 10 kg, 1400rpm, Class A, white
+                </div>
+                <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="rating-count">4,76(5)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price-ws">370 EUR</span>
+                </div>
+                <button class="add-to-bag" data-product-id="9">Add to bag</button>
+            </div>
+
+
+<!--Produs 9-->
+
+             <div class="product-card" data-product-id="10" data-product-name="VORTEX  refrigerated display case" data-product-price="99" data-product-image="imag10.png">
+                <div class="wishlist-icon" data-product-id="10">
+                    <img src="Vector.svg" alt="Add to Favorites" class="favorite-icon">
+                </div>
+                <div class="product-image">
+                    <img src="imag10.png" >
+                </div>
+                <div class="product-title">
+               VORTEX  refrigerated display case, 200 l, H 90 cm, Class D, silver
+                </div>
+                <div class="stock-status"><img class="star-prod" src="star.svg" alt="star"> in stock</div>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="rating-count">5,00(1)</span>
+                </div>
+                <div class="product-price">
+                    <span class="current-price-ws">99 EUR</span>
+                </div>
+                <button class="add-to-bag" data-product-id="10">Add to bag</button>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<!--numar pagina-->
+    <div class="pagination-wrapper">
+  <div class="pagination-control">
+    <span class="arrow">&#10094;</span>
+    <span class="page-number">1/2</span>
+    <span class="arrow">&#10095;</span>
+  </div>
+</div>
+
+    <div class="cart-modal">
+        <div class="cart-content">
+            <button class="close-button">&times;</button>
+            <h2>Shopping Bag</h2>
+            <div class="cart-items">
+                </div>
+            <div class="cart-total">
+                Total: <span class="total-price">0.00 EUR</span>
+            </div>
+            <a href="404.html"> <button class="checkout-button">Proceed to Checkout</button></a>
+        </div>
+    </div>
+    <div class="favorite-notification">
+        Added to Favorites!
+    </div>
+
+    <!--sectiunea footer-->
+
+<!--sectinea footer--><footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4><strong>About EHouse</strong></h4>
+      <p class="about-text">
+        We are an online store specialized in high-quality home and kitchen appliances.
+        With trusted brands, fast delivery, and dedicated customer support, we bring comfort
+        and efficiency to your home at the best prices.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+         <li><a href="index.html">Home</a></li>
+        <li><a href="LargeAppliances.html"></a>Large Appliances</a></li>
+        <li><a href="404.html"></a>Small Appliances</a></li>
+        <li><a href="404.html"></a>Sale</a></li>
+        <li><a href="Warranty.html"></a>Warranty & Return</a></li>
+        <li><a href="contact.html"></a>Contact</a></li>
+        <li><a href="404.html"></a>Terms & Conditions</a></li>
+        <li><a href="404.html"></a>Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>Email: support@ehouse.com</p>
+      <p>Phone: +(373)-68-35-10-31</p>
+      <p>Address: Cuza Vodă 3/1, Chișinău</p>
+    </div>
+
+    <div class="footer-col centered">
+  <h4>Follow Us</h4>
+  <div class="social-icons">
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="instagram1.svg" alt="Instagram" />
+    </a>
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="facebook.svg" alt="Facebook" />
+    </a>
+    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+        <img src="tt.svg" alt="TikTok" />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="twiter.svg" alt="X" />
+    </a>
+</div>
+  <div class="payment-icons">
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="visa.svg" alt="Visa" />
+    </a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="mastercard.svg" alt="mastercard" />
+    </a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EHouse. All rights reserved. <a href="#">Terms & Conditions</a></p>
+  </div>
+</footer>
+    <script src="LargeAppliances.js"></script>
+</body>
+</html>

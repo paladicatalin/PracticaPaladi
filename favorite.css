@@ -1,0 +1,122 @@
+  :root {
+      --color-black: #000000;
+      --color-dark-blue: #005F7A;
+      --color-light-blue: #00A0A9;
+      --color-red: #BF1919;
+      --color-white: #FFFFFF;
+      --font-primary: 'Krungthep', sans-serif;
+      --font-secondary: 'Kufam', 'Arial', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-secondary);
+      margin: 0;
+      background-color: var(--color-white);
+      color: var(--color-black);
+    }
+
+    header {
+      background-color: var(--color-light-blue);
+      color: var(--color-white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-arrow {
+      font-size: 1.5rem;
+      color: var(--color-white);
+      text-decoration: none;
+      margin-right: 1rem;
+      transition: transform 0.2s ease;
+    }
+
+    .back-arrow:hover {
+      transform: translateX(-4px);
+    }
+
+    header h1 {
+      margin: 0;
+      font-family: var(--font-primary);
+      font-size: 2.5rem;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #favorite-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      margin-bottom: 60px;
+    }
+
+    .favorite-product-card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .favorite-product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .favorite-product-card img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .favorite-product-card h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-family: var(--font-primary);
+      font-size: 1.5rem;
+    }
+
+    .favorite-product-card .price {
+      color: var(--color-dark-blue);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .remove-from-favorites {
+      background-color: var(--color-red);
+      color: var(--color-white);
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .remove-from-favorites:hover {
+      background-color: #991313;
+    }
+
+    #favorite-list p.empty-message {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #777;
+    }
+
+    footer {
+      background-color: var(--color-dark-blue);
+      color: var(--color-white);
+      text-align: center;
+      padding: 1rem 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }

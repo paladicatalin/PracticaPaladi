@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EHouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Kablammo&family=Maitree:wght@200;300;400;500;600;700&family=Montaga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="televizor.css">
+</head>
+<body>
+<header class="header">
+    <div class="top-bar">
+        <div class="search-icon-mobile">
+            <i class="fas fa-search"></i>
+        </div>
+       <div class="logo-container">
+                <div class="logo-img">
+                    <a href="index.html"><img src="logo-site.jpg" alt="Logo" /></a>
+                </div>
+                <a href="index.html"><div class="logo-text"><span class="e-color">E</span>House</div></a>
+            </div>
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="search..." />
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="icons-container">
+            <a href="#" class="icon-link cart-link" title="Bag">
+                <img src="shopping-bag.svg" alt="Bag" class="icon-img">
+                <span class="cart-count">0</span>
+            </a>
+            <a href="favorite.html" class="icon-link" title="Favorites">
+                  <img src="Vector-red.svg" alt="Favorites" class="icon-img">
+            </a>
+
+            <div class="profile-dropdown">
+                <div class="profile-icon" title="Profile">
+                    <img src="user.svg" alt="Profile" class="icon-img">
+                </div>
+                <div class="dropdown-content">
+                    <a href="login.html"><img src="log-in.svg" class="dropdown-icon"> Log In</a>
+                    <a href="#" class="my-bag-link"><img src="shopping-bag.svg" class="dropdown-icon" > My Bag</a>
+                    <a href="favorite.html"><img src="Vector.svg" class="dropdown-icon"> Favorites</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-list" id="navList">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="LargeAppliances.html" class="nav-link active">Large Appliances</a></li>
+            <li class="nav-item"><a href="404.html" class="nav-link">Small Appliances</a></li>
+            <li class="nav-item"><a href="404.html" class="nav-link sale">Sale</a></li>
+            <li class="nav-item"><a href="Warranty.html" class="nav-link">Warranty&Return</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="product-section">
+    <h1 class="product-title">Smart LED TV HISENSE 50A6N, Ultra HD 4K, HDR, 126cm</h1>
+    <div class="rating-container">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span class="rating-text">4.76 out of 5</span>
+        <span class="reviews-count">(74 reviews)</span>
+    </div>
+</div>
+
+<div class="container-baza">
+    <div class="product-wrapper" data-product-id="1" data-product-name="Smart LED TV HISENSE 50A6N" data-product-price="240" data-product-image="hisense_tv_1.png">
+        <div class="thumbnails" onmouseleave="resetImage()">
+            <img src="hisense_tv_1.png" alt="Miniatura 1" onmouseover="previewImage('hisense_tv_1.png')" onclick="setDefaultImage('hisense_tv_1.png')">
+            <img src="hisense_tv_2.jpg.avif" alt="Miniatura 2" onmouseover="previewImage('hisense_tv_2.jpg.avif')" onclick="setDefaultImage('hisense_tv_2.jpg.avif')">
+            <img src="hisense_tv_3.jpg.avif" alt="Miniatura 3" onmouseover="previewImage('hisense_tv_3.jpg.avif')" onclick="setDefaultImage('hisense_tv_3.jpg.avif')">
+            <img src="hisense_tv_4.jpg.avif" alt="Miniatura 4" onmouseover="previewImage('hisense_tv_4.jpg.avif')" onclick="setDefaultImage('hisense_tv_4.jpg.avif')">
+            <img src="hisense_tv_5.jpg.avif" alt="Miniatura 5" onmouseover="previewImage('hisense_tv_5.jpg.avif')" onclick="setDefaultImage('hisense_tv_5.jpg.avif')">
+        </div>
+        <div class="image-container" onmousemove="zoom(event)" onmouseleave="hideZoom()">
+            <img id="mainImage" class="main-image" src="hisense_tv_1.png" alt="Produs">
+            <div class="zoom-container">
+                <img id="zoomImage" class="zoom-image" src="hisense_tv_1.png" alt="Zoom">
+            </div>
+        </div>
+        <div class="product-purchase">
+            <div class="price">240 EUR</div>
+
+            <div class="delivery-info">
+                <i class="truck-icon"> <img src="truck.svg" ></i>
+                <span>Estimated delivery in BUCHAREST on May 16</span>
+            </div>
+
+            <div class="shipping-info">
+                <i class="dollar-icon"><img src="dollar-sign.svg" ></i>
+                <span>Free shipping</span>
+            </div>
+
+            <div class="action-buttons">
+                <button class="add-to-bag" data-product-id="1">Add to bag</button>
+                <i class="wishlist-button" data-product-id="1">
+                      <img src="Vector-red.svg" alt="Favorites" class="icon-img">
+                </i>
+            </div>
+
+
+            <div class="extra-services">
+                <h2 class="services-title">Add extra services</h2>
+
+                <div class="warranty-options">
+                    <div class="warranty-title">Add extra warranty</div>
+
+                    <div class="warranty-option">
+                        <input type="radio" id="warranty-1" name="warranty">
+                        <label for="warranty-1">1 year - 20.00 EUR</label>
+                    </div>
+
+                    <div class="warranty-option">
+                        <input type="radio" id="warranty-2" name="warranty">
+                        <label for="warranty-2">2 year - 30.00 EUR</label>
+                    </div>
+
+                    <div class="warranty-option">
+                        <input type="radio" id="warranty-3" name="warranty">
+                        <label for="warranty-3">3 year - 40.00 EUR</label>
+                    </div>
+
+                    <div class="warranty-option">
+                        <input type="radio" id="warranty-4" name="warranty">
+                        <label for="warranty-4">4 year - 45.00 EUR</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <div class="deals-header">
+            <h2>About Article</h2>
+        </div>
+
+        <p class="article">Discover stunning clarity and vibrant visuals with the <strong>HISENSE 50A6N Smart LED TV.</strong> Featuring 
+            a spacious <strong> 50-inch (126 cm) </strong>screen, <strong> HD 4K resolution </strong> , and HDR <strong> (High Dynamic Range) </strong>, this TV
+             delivers lifelike colors, deep contrast, and sharp details for an immersive viewing experience.
+Powered by a smart operating system, it gives you instant access to your favorite streaming platforms, apps, and content.
+ Whether you're watching movies, playing games, or browsing, the HISENSE 50A6N offers smooth performance and intuitive navigation. <br>
+<strong>Key Features:</strong></p>
+
+<ul class="articleli">
+  <li><strong>Screen Size:</strong> 50 / 126 cm</li>
+  <li><strong>Resolution:</strong> 4K Ultra HD (3840 x 2160)</li>
+  <li><strong>HDR Support:</strong> Yes - for enhanced contrast and color depth</li>
+  <li><strong>Smart TV Functions:</strong> Access to apps, streaming, and more</li>
+  <li><strong>Connectivity:</strong> Multiple HDMI and USB ports for easy device integration</li>
+</ul>
+<p class="article">Upgrade your entertainment setup with the HISENSE 50A6N – a perfect blend of smart features, sleek design, and stunning 4K performance.</p>
+
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4><strong>About EHouse</strong></h4>
+      <p class="about-text">
+        We are an online store specialized in high-quality home and kitchen appliances.
+        With trusted brands, fast delivery, and dedicated customer support, we bring comfort
+        and efficiency to your home at the best prices.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="LargeAppliances.html"></a>Large Appliances</a></li>
+        <li><a href="404.html"></a>Small Appliances</a></li>
+        <li><a href="404.html"></a>Sale</a></li>
+        <li><a href="Warranty.html"></a>Warranty & Return</a></li>
+        <li><a href="contact.html"></a>Contact</a></li>
+        <li><a href="404.html"></a>Terms & Conditions</a></li>
+        <li><a href="404.html"></a>Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>Email: support@ehouse.com</p>
+      <p>Phone: +(373)-68-35-10-31</p>
+      <p>Address: Cuza Vodă 3/1, Chișinău</p>
+    </div>
+
+   <div class="footer-col centered">
+  <h4>Follow Us</h4>
+  <div class="social-icons">
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="instagram1.svg" alt="Instagram" />
+    </a>
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="facebook.svg" alt="Facebook" />
+    </a>
+    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+        <img src="tt.svg" alt="TikTok" />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="twiter.svg" alt="X" />
+    </a>
+</div>
+  <div class="payment-icons">
+    <a href="https://www.visa.com" target="_blank" rel="noopener noreferrer">
+        <img src="visa.svg" alt="Visa" />
+    </a>
+    <a href="https://www.mastercard.com" target="_blank" rel="noopener noreferrer">
+        <img src="mastercard.svg" alt="mastercard" />
+    </a>
+  </div>
+</div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 EHouse. All rights reserved. <a href="#">Terms & Conditions</a></p>
+  </div>
+</footer>
+
+
+<div class="cart-modal">
+    <div class="cart-content">
+        <button class="close-button">&times;</button>
+        <h2>Shopping Bag</h2>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total ">Total: 0 EUR</div><button class="checkout-button">Proceed to Checkout</button>
+    </div>
+</div>
+
+
+<div class="favorite-notification"></div>
+
+<script src="televizor.js">
+    
+</script>
+</body>
+</html>
