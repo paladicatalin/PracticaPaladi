@@ -1109,7 +1109,7 @@
 
   .delivery-text-slider{
     position: absolute;
-    margin-right: 308px;
+    margin-right: 300px;
     margin-top: 22px;
     font-family: var(--font-secondary);
     color: var(--color-white);
@@ -1252,7 +1252,6 @@
  
     .slider-mini{
   display: flex;
-
   justify-content: center;
   align-items: center;
   width: 80%;
