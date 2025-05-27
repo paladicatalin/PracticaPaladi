@@ -1100,7 +1100,7 @@
 
        .delivery-title-slider{
     position: absolute;
-    margin-left: -230px;
+    margin-left: 0px;
     margin-top: -15px;
     font-family: var(--font-primary);
     color: var(--color-white);
