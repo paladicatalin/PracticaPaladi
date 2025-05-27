@@ -733,9 +733,7 @@
 .slider-mini{
   display: none;
 }
-.slider-mini2{
-  display: none;
-}
+
 /*sectiunea branduri*/
 .brands-section {
   padding: 20px;
@@ -1265,9 +1263,7 @@
    .slider-big{
     display: none;
    }
-   .slider-mini2{
-    display: none;
-   }
+  
 
       .trustpilot {
         display: none;
