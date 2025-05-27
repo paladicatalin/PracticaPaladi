@@ -1098,23 +1098,16 @@
     justify-content: center; 
   }
 
-       .delivery-title-slider{
-    position: absolute;
-    margin-left: -48px;
-    margin-top: -15px;
-    font-family: var(--font-primary);
-    color: var(--color-white);
-    font-size: 14px;
+  .delivery-title-slider {
+    font-size: 12px;
+    top: 8px;
+    left: 8px;
   }
 
-  .delivery-text-slider{
-    position: absolute;
-    margin-right: 140px;
-    margin-top: 22px;
-    font-family: var(--font-secondary);
-    color: var(--color-white);
-    opacity: 74%;
-    font-size: 8px;
+  .delivery-text-slider {
+    font-size: 9px;
+    top: 26px;
+    left: 8px;
   }
   }
 
