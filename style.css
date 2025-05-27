@@ -1116,7 +1116,7 @@
     font-family: var(--font-secondary);
     color: var(--color-white);
     opacity: 74%;
-    font-size: 10px;
+    font-size: 8px;
   }
   }
 
@@ -1251,25 +1251,7 @@
   color: var(--color-black);
 }
 
-        .delivery-title-slider{
-    position: absolute;
-    margin-left: -230px;
-    margin-top: -15px;
-    font-family: var(--font-primary);
-    color: var(--color-white);
-    font-size: 14px;
-  }
-
-  .delivery-text-slider{
-    position: absolute;
-    margin-right: 302px;
-    margin-top: 22px;
-    font-family: var(--font-secondary);
-    color: var(--color-white);
-    opacity: 74%;
-    font-size: 10px;
-  }
-
+ 
     .slider-mini{
   display: flex;
 
