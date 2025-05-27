@@ -377,7 +377,7 @@ function initFavorites() {
 
       const favoriteIcon = button.querySelector('.favorite-icon');
       const originalSrc = 'Vector.svg';
-      const redSrc = 'vector-red.svg';
+      const redSrc = 'Vector-red.svg';
   
       const productCard = button.closest('.product-card');
       const productId = parseInt(button.dataset.productId);
