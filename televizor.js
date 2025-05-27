@@ -252,7 +252,7 @@
             buttons.forEach(button => {
                 const icon = button.querySelector('.favorite-icon');
                 if (icon) {
-                    icon.src = isFavorite ? 'vector-red.svg' : 'Vector.svg';
+                    icon.src = isFavorite ? 'Vector-red.svg' : 'Vector.svg';
                 }
             });
         }
