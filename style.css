@@ -1028,18 +1028,8 @@
 .payment-icons img:hover {
     transform: scale(1.1);
 }
- @media screen and (max-width: 568px) {
-    .slider-big{
-      display: none;
-    }
-    .slider-mini{
-      display: none;
-    }
-    .slider-mini2{
-      display: flex;
-    }
-  }
-  
+
+
 @media (max-width: 600px) {
     .social-icons , .payment-icons {
         gap: 10px;
@@ -1267,17 +1257,17 @@
     margin-top: -15px;
     font-family: var(--font-primary);
     color: var(--color-white);
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .delivery-text-slider{
     position: absolute;
-    margin-right: 308px;
+    margin-right: 302px;
     margin-top: 22px;
     font-family: var(--font-secondary);
     color: var(--color-white);
     opacity: 74%;
-    font-size: 14px;
+    font-size: 10px;
   }
 
     .slider-mini{
