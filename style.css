@@ -733,6 +733,9 @@
 .slider-mini{
   display: none;
 }
+.slider-mini2{
+  display: none;
+}
 /*sectiunea branduri*/
 .brands-section {
   padding: 20px;
@@ -1096,7 +1099,36 @@
   }
 }
 
+  @media screen and (max-width: 568px) {
+    .slider-big{
+      display: none;
+    }
+    .slider-mini{
+      display: none;
+    }
+    .slider-mini2{
+      display: flex;
+    }
 
+       .delivery-title-slider{
+    position: absolute;
+    margin-left: -230px;
+    margin-top: -15px;
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    font-size: 14px;
+  }
+
+  .delivery-text-slider{
+    position: absolute;
+    margin-right: 308px;
+    margin-top: 22px;
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+    opacity: 74%;
+    font-size: 10px;
+  }
+  }
 
     @media screen and (max-width: 768px) {
 .newsletter-section {
@@ -1259,6 +1291,9 @@
    }
 
    .slider-big{
+    display: none;
+   }
+   .slider-mini2{
     display: none;
    }
 
