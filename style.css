@@ -1109,7 +1109,7 @@
 
   .delivery-text-slider{
     position: absolute;
-    margin-right: 200px;
+    margin-right: 10px;
     margin-top: 22px;
     font-family: var(--font-secondary);
     color: var(--color-white);
