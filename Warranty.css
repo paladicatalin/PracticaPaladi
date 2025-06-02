@@ -346,29 +346,13 @@
 .payment-icons img:hover {
     transform: scale(1.1);
 }
-/*
-.popular-brands h1 {
-    font-size: 28px;
-    position: relative;
-    padding-bottom: -8px;
-}
 
-.popular-brands h1::after {
-    content: '';
-    position: absolute;
-    left: -40px;
-    bottom: 3px;
-    width: 720px;
-    height: 4px; 
-   background: linear-gradient(90deg, #009688, #4DB6AC);
-}
-*/
 .vertical-line {
-    width: 5px; /* Grosimea liniei */
-    height: 990px; /* Se întinde pe toată înălțimea vizibilă a viewport-ului */
-    background-color: var(--color-light-blue); /* Culoarea turcoaz */
-    position: absolute; /* O menține vizibilă chiar și la scroll */
-    left: 25px; /* Poziționează linia la 20px de marginea stângă (ajustează după nevoie) */
+    width: 5px; 
+    height: 990px; 
+    background-color: var(--color-light-blue); 
+    position: absolute; 
+    left: 25px;
     top: 150px;
 }
 
